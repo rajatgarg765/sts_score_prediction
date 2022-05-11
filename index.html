@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STS | Prediction</title>
+    
+    <style>
+        body {
+            background-color: #11999F;
+            text-align: center;
+            padding: 0px;
+        }
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+  <div class="container">
+    <div style="color:black;">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>Semantic Text Similarity Prediction</h2>
+            <h3> Enter 1st Paragraph</h3>
+            <input id="first" name="1_para"  type="text" > 
+            <h3>Enter 2nd Paragraph</h3>
+            <input id="second" name="2_para" type="text">
+            <br><br><button id="sub" type="submit ">Predict</button>
+            <br>
+        </form>
+
+        <br><br><h3>{{ prediction_text}}</h3>
+    </div></div>
+</body>
+
+</html>
