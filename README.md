@@ -4,5 +4,5 @@ Semantic similarity. Semantic Textual Similarity (STS) assesses the degree to wh
 are semantically equivalent to each other.
 1 means highly similar
 0 means highly dissimilar
-I have deployed it on Heroku cloud.
+I have deployed it on Heroku cloud below is the link
 Link: https://sts-score-pred.herokuapp.com/
